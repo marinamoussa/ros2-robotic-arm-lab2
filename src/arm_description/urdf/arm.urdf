@@ -157,4 +157,36 @@
     </inertial>
   </link>
 
+
+  <gazebo>
+    <plugin filename="gz-sim-joint-position-controller-system" name="gz::sim::systems::JointPositionController">
+      <joint_name>joint1</joint_name>
+      <topic>/gz_cmd/joint1</topic>
+      <p_gain>20.0</p_gain>
+      <i_gain>0.1</i_gain>
+      <d_gain>1.0</d_gain>
+    </plugin>
+    <plugin filename="gz-sim-joint-position-controller-system" name="gz::sim::systems::JointPositionController">
+      <joint_name>joint2</joint_name>
+      <topic>/gz_cmd/joint2</topic>
+      <p_gain>20.0</p_gain>
+      <i_gain>0.1</i_gain>
+      <d_gain>1.0</d_gain>
+    </plugin>
+    <plugin filename="gz-sim-joint-position-controller-system" name="gz::sim::systems::JointPositionController">
+      <joint_name>joint3</joint_name>
+      <topic>/gz_cmd/joint3</topic>
+      <p_gain>20.0</p_gain>
+      <i_gain>0.1</i_gain>
+      <d_gain>1.0</d_gain>
+    </plugin>
+    <plugin filename="gz-sim-joint-position-controller-system" name="gz::sim::systems::JointPositionController">
+      <joint_name>joint4</joint_name>
+      <topic>/gz_cmd/joint4</topic>
+      <p_gain>20.0</p_gain>
+      <i_gain>0.1</i_gain>
+      <d_gain>1.0</d_gain>
+    </plugin>
+  </gazebo>
 </robot>
+
